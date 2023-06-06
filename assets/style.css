@@ -30,9 +30,47 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
+  height: 100vh;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*=============== CARD ===============*/
+.card {
+  background-color: var(--card-color);
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+  padding: 1em;
+  width: 320px;
+  text-align: center;
+}
+
+.card,
+.card__image {
+  border-radius: 1rem;
+}
+
+.card__content {
+  padding-inline: .6em;
+}
+
+.card__title {
+  margin: 1em 0;
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+}
+
+.card__description {
+  color: var(--text-color);
+  margin-bottom: 1.5em;
+}
+
+
